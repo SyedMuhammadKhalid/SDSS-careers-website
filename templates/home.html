@@ -33,9 +33,11 @@
     <h2 class="text-center">
       Open Positions
     </h2>
-      
-    <p class="text-center"> ToDo </p>
-      
+    <div>
+        {%for job in jobs%}
+          {% include 'jobitem.html'%}
+    {% endfor %}
+    </div>
     <div style="text-align:center; "> 
       
       <button class="btn btn-primary btn-lg"> Contact Us
